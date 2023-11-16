@@ -2,10 +2,16 @@
 const sidebar = document.querySelector(".menu-container");
 const body = document.querySelector('body');
 
-// sidebar.addEventListener('mouseover', () => {
-//     body.style.overflow = 'hidden';
-// })
+window.addEventListener("resize", () => {
+    setSidebarHeight();
+});
 
-// sidebar.addEventListener("mouseout", () => {
-//     body.style.overflow = 'auto';
-// })
+function setSidebarHeight() {
+    const size = document.body.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+    if (size.width <= 740 && windowHeight <= 610) {
+        sidebar.style.minHeight = size.height + "px";
+    } else {
+        sidebar.style = "";
+    }
+};

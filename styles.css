@@ -9,33 +9,132 @@ body {
 }
 
 .menu-container {
-    /* position: sticky;
-    top: 0px; */
-    width: 15vw;
-    height: 100vh;
-    padding: 30px 20px 20px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    max-height: 100vh;
+    padding: 30px 20px 0 20px;
     color: rgb(221, 226, 255);
     background-color: #363740;
 
+}
+
+
+
+.menu {
+    /* border: 1px solid greenyellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90.57vh;
+}
+
+.menu-options {
+    /* border: 1px solid violet; */
+}
+
+.menu-foot {
+    /* border: 1px solid violet; */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    color: #a4a6b3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 0;
 
 }
 
+li {
+    padding: 17px 0px 17px 10px;
+}
+
+.menu-item {
+    margin-left: 20px;
+    font-size: 17px;
+    font-weight: 700;
+}
 
 .logo {
     width: 40px;
     height: 40px;
+    padding-bottom: 15px;
 }
 
 .main-container {
-    width: 85vw;
+    width: 90vw;
+    margin-left: 240px;
     height: 100vh;
     padding: 30px 20px 20px 20px;
-    color: black;
+    color: rgb(37, 39, 51);
+    background-color: #F7F8FC;
 }
 
-.main-container>h1 {
+
+
+i {
+    /* font-size: 20px; */
+}
+
+.main-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+.main-head>h1 {
     margin: 0;
-    font-size: 23.2px;
+    font-size: 1.45rem;
     font-weight: 700;
     color: rgb(37, 39, 51);
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.profile-pic {
+    height: 43px;
+    width: 43px;
+    border-radius: 50%;
+    margin-left: 25px;
+}
+
+.main-cards {
+    display: flex;
+    gap: 30px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.summary-card {
+    flex: 1;
+    border: 2px solid #dfe0eb;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.card-des {
+    font-size: 17.6px;
+    color: rgb(159, 162, 180);
+    margin: 0;
+}
+
+.card-no {
+    font-size: 36px;
+    font-weight: 700;
+    padding-top: 12px;
+    margin: 0;
 }
