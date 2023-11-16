@@ -14,7 +14,7 @@ body {
     left: 0;
     width: 200px;
     max-height: 100vh;
-    padding: 30px 20px 0 20px;
+    padding-top: 30px;
     color: rgb(221, 226, 255);
     background-color: #363740;
 
@@ -30,14 +30,6 @@ body {
     height: 90.57vh;
 }
 
-.menu-options {
-    /* border: 1px solid violet; */
-}
-
-.menu-foot {
-    /* border: 1px solid violet; */
-}
-
 ul {
     list-style: none;
     padding: 0;
@@ -50,7 +42,15 @@ ul {
 }
 
 li {
-    padding: 17px 0px 17px 10px;
+    padding: 17px 0px 17px 30px;
+}
+
+li:hover {
+    background-color: #3E4049;
+    color: #DDE2FF;
+    border-left: 4px solid #DDE2FF;
+    padding-left: 26px;
+
 }
 
 .menu-item {
@@ -63,6 +63,7 @@ li {
     width: 40px;
     height: 40px;
     padding-bottom: 15px;
+    padding-left: 20px;
 }
 
 .main-container {
@@ -74,11 +75,6 @@ li {
     background-color: #F7F8FC;
 }
 
-
-
-i {
-    /* font-size: 20px; */
-}
 
 .main-head {
     display: flex;
